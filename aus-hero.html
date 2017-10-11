@@ -12,7 +12,6 @@
         background-attachment: scroll;
       }
       :host .hero-wrapper {
-        background-image: url([[source]]);
         height: 380px;
       }
       .header {
@@ -31,7 +30,7 @@
     </style>
     <!-- Template Here -->
     <div>
-      <div class="hero-wrapper">
+      <div class="hero-wrapper" style="background-image: url({{source}})">
       <div class="header">{{header}}</div>
       <div class="blurb">{{blurb}}</div>
       </div>
